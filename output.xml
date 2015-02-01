@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<tree classes="unacc:1210,acc:384,good:69,vgood:65" entropy="0.603">
+	<node classes="unacc:576," entropy="0.000" safety="low">unacc</node>
+	<node classes="unacc:357,acc:180,good:39," entropy="0.608" safety="med">
+		<node classes="unacc:192," entropy="0.000" persons="2">unacc</node>
+		<node classes="unacc:84,acc:90,good:18," entropy="0.677" persons="4">
+			<node classes="unacc:36,acc:12," entropy="0.406" buying="vhigh">
+				<node classes="unacc:12," entropy="0.000" maint="vhigh">unacc</node>
+				<node classes="unacc:12," entropy="0.000" maint="high">unacc</node>
+				<node classes="unacc:6,acc:6," entropy="0.500" maint="med">
+					<node classes="unacc:4," entropy="0.000" lug_boot="small">unacc</node>
+					<node classes="unacc:2,acc:2," entropy="0.500" lug_boot="med">
+						<node classes="unacc:1," entropy="0.000" doors="2">unacc</node>
+						<node classes="unacc:1," entropy="0.000" doors="3">unacc</node>
+						<node classes="acc:1," entropy="0.000" doors="4">acc</node>
+						<node classes="acc:1," entropy="0.000" doors="5more">acc</node>
+					</node>
+					<node classes="acc:4," entropy="0.000" lug_boot="big">acc</node>
+				</node>
+				<node classes="unacc:6,acc:6," entropy="0.500" maint="low">
+					<node classes="unacc:4," entropy="0.000" lug_boot="small">unacc</node>
+					<node classes="unacc:2,acc:2," entropy="0.500" lug_boot="med">
+						<node classes="unacc:1," entropy="0.000" doors="2">unacc</node>
+						<node classes="unacc:1," entropy="0.000" doors="3">unacc</node>
+						<node classes="acc:1," entropy="0.000" doors="4">acc</node>
+						<node classes="acc:1," entropy="0.000" doors="5more">acc</node>
+					</node>
+					<node classes="acc:4," entropy="0.000" lug_boot="big">acc</node>
+				</node>
+			</node>
+			<node classes="unacc:30,acc:18," entropy="0.477" buying="high">
+				<node classes="unacc:16," entropy="0.000" lug_boot="small">unacc</node>
+				<node classes="unacc:10,acc:6," entropy="0.477" lug_boot="med">
+					<node classes="unacc:4," entropy="0.000" doors="2">unacc</node>
+					<node classes="unacc:4," entropy="0.000" doors="3">unacc</node>
+					<node classes="unacc:1,acc:3," entropy="0.406" doors="4">
+						<node classes="unacc:1," entropy="0.000" maint="vhigh">unacc</node>
+						<node classes="acc:1," entropy="0.000" maint="high">acc</node>
+						<node classes="acc:1," entropy="0.000" maint="med">acc</node>
+						<node classes="acc:1," entropy="0.000" maint="low">acc</node>
+					</node>
+					<node classes="unacc:1,acc:3," entropy="0.406" doors="5more">
+						<node classes="unacc:1," entropy="0.000" maint="vhigh">unacc</node>
+						<node classes="acc:1," entropy="0.000" maint="high">acc</node>
+						<node classes="acc:1," entropy="0.000" maint="med">acc</node>
+						<node classes="acc:1," entropy="0.000" maint="low">acc</node>
+					</node>
+				</node>
+				<node classes="unacc:4,acc:12," entropy="0.406" lug_boot="big">
+					<node classes="unacc:4," entropy="0.000" maint="vhigh">unacc</node>
+					<node classes="acc:4," entropy="0.000" maint="high">acc</node>
+					<node classes="acc:4," entropy="0.000" maint="med">acc</node>
+					<node classes="acc:4," entropy="0.000" maint="low">acc</node>
+				</node>
+			</node>
+			<node classes="unacc:12,acc:30,good:6," entropy="0.649" buying="med">
+				<node classes="unacc:6,acc:6," entropy="0.500" maint="vhigh">
+					<node classes="unacc:4," entropy="0.000" lug_boot="small">unacc</node>
+					<node classes="unacc:2,acc:2," entropy="0.500" lug_boot="med">
+						<node classes="unacc:1," entropy="0.000" doors="2">unacc</node>
+						<node classes="unacc:1," entropy="0.000" doors="3">unacc</node>
+						<node classes="acc:1," entropy="0.000" doors="4">acc</node>
+						<node classes="acc:1," entropy="0.000" doors="5more">acc</node>
+					</node>
+					<node classes="acc:4," entropy="0.000" lug_boot="big">acc</node>
+				</node>
+				<node classes="unacc:6,acc:6," entropy="0.500" maint="high">
+					<node classes="unacc:4," entropy="0.000" lug_boot="small">unacc</node>
+					<node classes="unacc:2,acc:2," entropy="0.500" lug_boot="med">
+						<node classes="unacc:1," entropy="0.000" doors="2">unacc</node>
+						<node classes="unacc:1," entropy="0.000" doors="3">unacc</node>
+						<node classes="acc:1," entropy="0.000" doors="4">acc</node>
+						<node classes="acc:1," entropy="0.000" doors="5more">acc</node>
+					</node>
+					<node classes="acc:4," entropy="0.000" lug_boot="big">acc</node>
+				</node>
+				<node classes="acc:12," entropy="0.000" maint="med">acc</node>
+				<node classes="acc:6,good:6," entropy="0.500" maint="low">
+					<node classes="acc:4," entropy="0.000" lug_boot="small">acc</node>
+					<node classes="acc:2,good:2," entropy="0.500" lug_boot="med">
+						<node classes="acc:1," entropy="0.000" doors="2">acc</node>
+						<node classes="acc:1," entropy="0.000" doors="3">acc</node>
+						<node classes="good:1," entropy="0.000" doors="4">good</node>
+						<node classes="good:1," entropy="0.000" doors="5more">good</node>
+					</node>
+					<node classes="good:4," entropy="0.000" lug_boot="big">good</node>
+				</node>
+			</node>
+			<node classes="unacc:6,acc:30,good:12," entropy="0.649" buying="low">
+				<node classes="unacc:6,acc:6," entropy="0.500" maint="vhigh">
+					<node classes="unacc:4," entropy="0.000" lug_boot="small">unacc</node>
+					<node classes="unacc:2,acc:2," entropy="0.500" lug_boot="med">
+						<node classes="unacc:1," entropy="0.000" doors="2">unacc</node>
+						<node classes="unacc:1," entropy="0.000" doors="3">unacc</node>
+						<node classes="acc:1," entropy="0.000" doors="4">acc</node>
+						<node classes="acc:1," entropy="0.000" doors="5more">acc</node>
+					</node>
+					<node classes="acc:4," entropy="0.000" lug_boot="big">acc</node>
+				</node>
+				<node classes="acc:12," entropy="0.000" maint="high">acc</node>
+				<node classes="acc:6,good:6," entropy="0.500" maint="med">
+					<node classes="acc:4," entropy="0.000" lug_boot="small">acc</node>
+					<node classes="acc:2,good:2," entropy="0.500" lug_boot="med">
+						<node classes="acc:1," entropy="0.000" doors="2">acc</node>
+						<node classes="acc:1," entropy="0.000" doors="3">acc</node>
+						<node classes="good:1," entropy="0.000" doors="4">good</node>
+						<node classes="good:1," entropy="0.000" doors="5more">good</node>
+					</node>
+					<node classes="good:4," entropy="0.000" lug_boot="big">good</node>
+				</node>
+				<node classes="acc:6,good:6," entropy="0.500" maint="low">
+					<node classes="acc:4," entropy="0.000" lug_boot="small">acc</node>
+					<node classes="acc:2,good:2," entropy="0.500" lug_boot="med">
+						<node classes="acc:1," entropy="0.000" doors="2">acc</node>
+						<node classes="acc:1," entropy="0.000" doors="3">acc</node>
+						<node classes="good:1," entropy="0.000" doors="4">good</node>
+						<node classes="good:1," entropy="0.000" doors="5more">good</node>
+					</node>
+					<node classes="good:4," entropy="0.000" lug_boot="big">good</node>
+				</node>
+			</node>
+		</node>
+		<node classes="unacc:81,acc:90,good:21," entropy="0.693" persons="more">
+			<node classes="unacc:34,acc:14," entropy="0.435" buying="vhigh">
+				<node classes="unacc:12," entropy="0.000" maint="vhigh">unacc</node>
+				<node classes="unacc:12," entropy="0.000" maint="high">unacc</node>
+				<node classes="unacc:5,acc:7," entropy="0.490" maint="med">
+					<node classes="unacc:4," entropy="0.000" lug_boot="small">unacc</node>
+					<node classes="unacc:1,acc:3," entropy="0.406" lug_boot="med">
+						<node classes="unacc:1," entropy="0.000" doors="2">unacc</node>
+						<node classes="acc:1," entropy="0.000" doors="3">acc</node>
+						<node classes="acc:1," entropy="0.000" doors="4">acc</node>
+						<node classes="acc:1," entropy="0.000" doors="5more">acc</node>
+					</node>
+					<node classes="acc:4," entropy="0.000" lug_boot="big">acc</node>
+				</node>
+				<node classes="unacc:5,acc:7," entropy="0.490" maint="low">
+					<node classes="unacc:4," entropy="0.000" lug_boot="small">unacc</node>
+					<node classes="unacc:1,acc:3," entropy="0.406" lug_boot="med">
+						<node classes="unacc:1," entropy="0.000" doors="2">unacc</node>
+						<node classes="acc:1," entropy="0.000" doors="3">acc</node>
+						<node classes="acc:1," entropy="0.000" doors="4">acc</node>
+						<node classes="acc:1," entropy="0.000" doors="5more">acc</node>
+					</node>
+					<node classes="acc:4," entropy="0.000" lug_boot="big">acc</node>
+				</node>
+			</node>
+			<node classes="unacc:27,acc:21," entropy="0.494" buying="high">
+				<node classes="unacc:16," entropy="0.000" lug_boot="small">unacc</node>
+				<node classes="unacc:7,acc:9," entropy="0.494" lug_boot="med">
+					<node classes="unacc:4," entropy="0.000" doors="2">unacc</node>
+					<node classes="unacc:1,acc:3," entropy="0.406" doors="3">
+						<node classes="unacc:1," entropy="0.000" maint="vhigh">unacc</node>
+						<node classes="acc:1," entropy="0.000" maint="high">acc</node>
+						<node classes="acc:1," entropy="0.000" maint="med">acc</node>
+						<node classes="acc:1," entropy="0.000" maint="low">acc</node>
+					</node>
+					<node classes="unacc:1,acc:3," entropy="0.406" doors="4">
+						<node classes="unacc:1," entropy="0.000" maint="vhigh">unacc</node>
+						<node classes="acc:1," entropy="0.000" maint="high">acc</node>
+						<node classes="acc:1," entropy="0.000" maint="med">acc</node>
+						<node classes="acc:1," entropy="0.000" maint="low">acc</node>
+					</node>
+					<node classes="unacc:1,acc:3," entropy="0.406" doors="5more">
+						<node classes="unacc:1," entropy="0.000" maint="vhigh">unacc</node>
+						<node classes="acc:1," entropy="0.000" maint="high">acc</node>
+						<node classes="acc:1," entropy="0.000" maint="med">acc</node>
+						<node classes="acc:1," entropy="0.000" maint="low">acc</node>
+					</node>
+				</node>
+				<node classes="unacc:4,acc:12," entropy="0.406" lug_boot="big">
+					<node classes="unacc:4," entropy="0.000" maint="vhigh">unacc</node>
+					<node classes="acc:4," entropy="0.000" maint="high">acc</node>
+					<node classes="acc:4," entropy="0.000" maint="med">acc</node>
+					<node classes="acc:4," entropy="0.000" maint="low">acc</node>
+				</node>
+			</node>
+			<node classes="unacc:12,acc:29,good:7," entropy="0.672" buying="med">
+				<node classes="unacc:5,acc:7," entropy="0.490" maint="vhigh">
+					<node classes="unacc:4," entropy="0.000" lug_boot="small">unacc</node>
+					<node classes="unacc:1,acc:3," entropy="0.406" lug_boot="med">
+						<node classes="unacc:1," entropy="0.000" doors="2">unacc</node>
+						<node classes="acc:1," entropy="0.000" doors="3">acc</node>
+						<node classes="acc:1," entropy="0.000" doors="4">acc</node>
+						<node classes="acc:1," entropy="0.000" doors="5more">acc</node>
+					</node>
+					<node classes="acc:4," entropy="0.000" lug_boot="big">acc</node>
+				</node>
+				<node classes="unacc:5,acc:7," entropy="0.490" maint="high">
+					<node classes="unacc:4," entropy="0.000" lug_boot="small">unacc</node>
+					<node classes="unacc:1,acc:3," entropy="0.406" lug_boot="med">
+						<node classes="unacc:1," entropy="0.000" doors="2">unacc</node>
+						<node classes="acc:1," entropy="0.000" doors="3">acc</node>
+						<node classes="acc:1," entropy="0.000" doors="4">acc</node>
+						<node classes="acc:1," entropy="0.000" doors="5more">acc</node>
+					</node>
+					<node classes="acc:4," entropy="0.000" lug_boot="big">acc</node>
+				</node>
+				<node classes="unacc:1,acc:11," entropy="0.207" maint="med">
+					<node classes="unacc:1,acc:2," entropy="0.459" doors="2">
+						<node classes="unacc:1," entropy="0.000" lug_boot="small">unacc</node>
+						<node classes="acc:1," entropy="0.000" lug_boot="med">acc</node>
+						<node classes="acc:1," entropy="0.000" lug_boot="big">acc</node>
+					</node>
+					<node classes="acc:3," entropy="0.000" doors="3">acc</node>
+					<node classes="acc:3," entropy="0.000" doors="4">acc</node>
+					<node classes="acc:3," entropy="0.000" doors="5more">acc</node>
+				</node>
+				<node classes="unacc:1,acc:4,good:7," entropy="0.640" maint="low">
+					<node classes="unacc:1,acc:3," entropy="0.406" lug_boot="small">
+						<node classes="unacc:1," entropy="0.000" doors="2">unacc</node>
+						<node classes="acc:1," entropy="0.000" doors="3">acc</node>
+						<node classes="acc:1," entropy="0.000" doors="4">acc</node>
+						<node classes="acc:1," entropy="0.000" doors="5more">acc</node>
+					</node>
+					<node classes="acc:1,good:3," entropy="0.406" lug_boot="med">
+						<node classes="acc:1," entropy="0.000" doors="2">acc</node>
+						<node classes="good:1," entropy="0.000" doors="3">good</node>
+						<node classes="good:1," entropy="0.000" doors="4">good</node>
+						<node classes="good:1," entropy="0.000" doors="5more">good</node>
+					</node>
+					<node classes="good:4," entropy="0.000" lug_boot="big">good</node>
+				</node>
+			</node>
+			<node classes="unacc:8,acc:26,good:14," entropy="0.714" buying="low">
+				<node classes="unacc:5,acc:7," entropy="0.490" maint="vhigh">
+					<node classes="unacc:4," entropy="0.000" lug_boot="small">unacc</node>
+					<node classes="unacc:1,acc:3," entropy="0.406" lug_boot="med">
+						<node classes="unacc:1," entropy="0.000" doors="2">unacc</node>
+						<node classes="acc:1," entropy="0.000" doors="3">acc</node>
+						<node classes="acc:1," entropy="0.000" doors="4">acc</node>
+						<node classes="acc:1," entropy="0.000" doors="5more">acc</node>
+					</node>
+					<node classes="acc:4," entropy="0.000" lug_boot="big">acc</node>
+				</node>
+				<node classes="unacc:1,acc:11," entropy="0.207" maint="high">
+					<node classes="unacc:1,acc:2," entropy="0.459" doors="2">
+						<node classes="unacc:1," entropy="0.000" lug_boot="small">unacc</node>
+						<node classes="acc:1," entropy="0.000" lug_boot="med">acc</node>
+						<node classes="acc:1," entropy="0.000" lug_boot="big">acc</node>
+					</node>
+					<node classes="acc:3," entropy="0.000" doors="3">acc</node>
+					<node classes="acc:3," entropy="0.000" doors="4">acc</node>
+					<node classes="acc:3," entropy="0.000" doors="5more">acc</node>
+				</node>
+				<node classes="unacc:1,acc:4,good:7," entropy="0.640" maint="med">
+					<node classes="unacc:1,acc:3," entropy="0.406" lug_boot="small">
+						<node classes="unacc:1," entropy="0.000" doors="2">unacc</node>
+						<node classes="acc:1," entropy="0.000" doors="3">acc</node>
+						<node classes="acc:1," entropy="0.000" doors="4">acc</node>
+						<node classes="acc:1," entropy="0.000" doors="5more">acc</node>
+					</node>
+					<node classes="acc:1,good:3," entropy="0.406" lug_boot="med">
+						<node classes="acc:1," entropy="0.000" doors="2">acc</node>
+						<node classes="good:1," entropy="0.000" doors="3">good</node>
+						<node classes="good:1," entropy="0.000" doors="4">good</node>
+						<node classes="good:1," entropy="0.000" doors="5more">good</node>
+					</node>
+					<node classes="good:4," entropy="0.000" lug_boot="big">good</node>
+				</node>
+				<node classes="unacc:1,acc:4,good:7," entropy="0.640" maint="low">
+					<node classes="unacc:1,acc:3," entropy="0.406" lug_boot="small">
+						<node classes="unacc:1," entropy="0.000" doors="2">unacc</node>
+						<node classes="acc:1," entropy="0.000" doors="3">acc</node>
+						<node classes="acc:1," entropy="0.000" doors="4">acc</node>
+						<node classes="acc:1," entropy="0.000" doors="5more">acc</node>
+					</node>
+					<node classes="acc:1,good:3," entropy="0.406" lug_boot="med">
+						<node classes="acc:1," entropy="0.000" doors="2">acc</node>
+						<node classes="good:1," entropy="0.000" doors="3">good</node>
+						<node classes="good:1," entropy="0.000" doors="4">good</node>
+						<node classes="good:1," entropy="0.000" doors="5more">good</node>
+					</node>
+					<node classes="good:4," entropy="0.000" lug_boot="big">good</node>
+				</node>
+			</node>
+		</node>
+	</node>
+	<node classes="unacc:277,acc:204,good:30,vgood:65" entropy="0.808" safety="high">
+		<node classes="unacc:192," entropy="0.000" persons="2">unacc</node>
+		<node classes="unacc:36,acc:108,good:18,vgood:30" entropy="0.829" persons="4">
+			<node classes="unacc:24,acc:24," entropy="0.500" buying="vhigh">
+				<node classes="unacc:12," entropy="0.000" maint="vhigh">unacc</node>
+				<node classes="unacc:12," entropy="0.000" maint="high">unacc</node>
+				<node classes="acc:12," entropy="0.000" maint="med">acc</node>
+				<node classes="acc:12," entropy="0.000" maint="low">acc</node>
+			</node>
+			<node classes="unacc:12,acc:36," entropy="0.406" buying="high">
+				<node classes="unacc:12," entropy="0.000" maint="vhigh">unacc</node>
+				<node classes="acc:12," entropy="0.000" maint="high">acc</node>
+				<node classes="acc:12," entropy="0.000" maint="med">acc</node>
+				<node classes="acc:12," entropy="0.000" maint="low">acc</node>
+			</node>
+			<node classes="acc:30,good:6,vgood:12" entropy="0.649" buying="med">
+				<node classes="acc:12," entropy="0.000" maint="vhigh">acc</node>
+				<node classes="acc:12," entropy="0.000" maint="high">acc</node>
+				<node classes="acc:6,vgood:6" entropy="0.500" maint="med">
+					<node classes="acc:4," entropy="0.000" lug_boot="small">acc</node>
+					<node classes="acc:2,vgood:2" entropy="0.500" lug_boot="med">
+						<node classes="acc:1," entropy="0.000" doors="2">acc</node>
+						<node classes="acc:1," entropy="0.000" doors="3">acc</node>
+						<node classes="vgood:1" entropy="0.000" doors="4">vgood</node>
+						<node classes="vgood:1" entropy="0.000" doors="5more">vgood</node>
+					</node>
+					<node classes="vgood:4" entropy="0.000" lug_boot="big">vgood</node>
+				</node>
+				<node classes="good:6,vgood:6" entropy="0.500" maint="low">
+					<node classes="good:4," entropy="0.000" lug_boot="small">good</node>
+					<node classes="good:2,vgood:2" entropy="0.500" lug_boot="med">
+						<node classes="good:1," entropy="0.000" doors="2">good</node>
+						<node classes="good:1," entropy="0.000" doors="3">good</node>
+						<node classes="vgood:1" entropy="0.000" doors="4">vgood</node>
+						<node classes="vgood:1" entropy="0.000" doors="5more">vgood</node>
+					</node>
+					<node classes="vgood:4" entropy="0.000" lug_boot="big">vgood</node>
+				</node>
+			</node>
+			<node classes="acc:18,good:12,vgood:18" entropy="0.781" buying="low">
+				<node classes="acc:12," entropy="0.000" maint="vhigh">acc</node>
+				<node classes="acc:6,vgood:6" entropy="0.500" maint="high">
+					<node classes="acc:4," entropy="0.000" lug_boot="small">acc</node>
+					<node classes="acc:2,vgood:2" entropy="0.500" lug_boot="med">
+						<node classes="acc:1," entropy="0.000" doors="2">acc</node>
+						<node classes="acc:1," entropy="0.000" doors="3">acc</node>
+						<node classes="vgood:1" entropy="0.000" doors="4">vgood</node>
+						<node classes="vgood:1" entropy="0.000" doors="5more">vgood</node>
+					</node>
+					<node classes="vgood:4" entropy="0.000" lug_boot="big">vgood</node>
+				</node>
+				<node classes="good:6,vgood:6" entropy="0.500" maint="med">
+					<node classes="good:4," entropy="0.000" lug_boot="small">good</node>
+					<node classes="good:2,vgood:2" entropy="0.500" lug_boot="med">
+						<node classes="good:1," entropy="0.000" doors="2">good</node>
+						<node classes="good:1," entropy="0.000" doors="3">good</node>
+						<node classes="vgood:1" entropy="0.000" doors="4">vgood</node>
+						<node classes="vgood:1" entropy="0.000" doors="5more">vgood</node>
+					</node>
+					<node classes="vgood:4" entropy="0.000" lug_boot="big">vgood</node>
+				</node>
+				<node classes="good:6,vgood:6" entropy="0.500" maint="low">
+					<node classes="good:4," entropy="0.000" lug_boot="small">good</node>
+					<node classes="good:2,vgood:2" entropy="0.500" lug_boot="med">
+						<node classes="good:1," entropy="0.000" doors="2">good</node>
+						<node classes="good:1," entropy="0.000" doors="3">good</node>
+						<node classes="vgood:1" entropy="0.000" doors="4">vgood</node>
+						<node classes="vgood:1" entropy="0.000" doors="5more">vgood</node>
+					</node>
+					<node classes="vgood:4" entropy="0.000" lug_boot="big">vgood</node>
+				</node>
+			</node>
+		</node>
+		<node classes="unacc:49,acc:96,good:12,vgood:35" entropy="0.850" persons="more">
+			<node classes="unacc:26,acc:22," entropy="0.497" buying="vhigh">
+				<node classes="unacc:12," entropy="0.000" maint="vhigh">unacc</node>
+				<node classes="unacc:12," entropy="0.000" maint="high">unacc</node>
+				<node classes="unacc:1,acc:11," entropy="0.207" maint="med">
+					<node classes="unacc:1,acc:2," entropy="0.459" doors="2">
+						<node classes="unacc:1," entropy="0.000" lug_boot="small">unacc</node>
+						<node classes="acc:1," entropy="0.000" lug_boot="med">acc</node>
+						<node classes="acc:1," entropy="0.000" lug_boot="big">acc</node>
+					</node>
+					<node classes="acc:3," entropy="0.000" doors="3">acc</node>
+					<node classes="acc:3," entropy="0.000" doors="4">acc</node>
+					<node classes="acc:3," entropy="0.000" doors="5more">acc</node>
+				</node>
+				<node classes="unacc:1,acc:11," entropy="0.207" maint="low">
+					<node classes="unacc:1,acc:2," entropy="0.459" doors="2">
+						<node classes="unacc:1," entropy="0.000" lug_boot="small">unacc</node>
+						<node classes="acc:1," entropy="0.000" lug_boot="med">acc</node>
+						<node classes="acc:1," entropy="0.000" lug_boot="big">acc</node>
+					</node>
+					<node classes="acc:3," entropy="0.000" doors="3">acc</node>
+					<node classes="acc:3," entropy="0.000" doors="4">acc</node>
+					<node classes="acc:3," entropy="0.000" doors="5more">acc</node>
+				</node>
+			</node>
+			<node classes="unacc:15,acc:33," entropy="0.448" buying="high">
+				<node classes="unacc:12," entropy="0.000" maint="vhigh">unacc</node>
+				<node classes="unacc:1,acc:11," entropy="0.207" maint="high">
+					<node classes="unacc:1,acc:2," entropy="0.459" doors="2">
+						<node classes="unacc:1," entropy="0.000" lug_boot="small">unacc</node>
+						<node classes="acc:1," entropy="0.000" lug_boot="med">acc</node>
+						<node classes="acc:1," entropy="0.000" lug_boot="big">acc</node>
+					</node>
+					<node classes="acc:3," entropy="0.000" doors="3">acc</node>
+					<node classes="acc:3," entropy="0.000" doors="4">acc</node>
+					<node classes="acc:3," entropy="0.000" doors="5more">acc</node>
+				</node>
+				<node classes="unacc:1,acc:11," entropy="0.207" maint="med">
+					<node classes="unacc:1,acc:2," entropy="0.459" doors="2">
+						<node classes="unacc:1," entropy="0.000" lug_boot="small">unacc</node>
+						<node classes="acc:1," entropy="0.000" lug_boot="med">acc</node>
+						<node classes="acc:1," entropy="0.000" lug_boot="big">acc</node>
+					</node>
+					<node classes="acc:3," entropy="0.000" doors="3">acc</node>
+					<node classes="acc:3," entropy="0.000" doors="4">acc</node>
+					<node classes="acc:3," entropy="0.000" doors="5more">acc</node>
+				</node>
+				<node classes="unacc:1,acc:11," entropy="0.207" maint="low">
+					<node classes="unacc:1,acc:2," entropy="0.459" doors="2">
+						<node classes="unacc:1," entropy="0.000" lug_boot="small">unacc</node>
+						<node classes="acc:1," entropy="0.000" lug_boot="med">acc</node>
+						<node classes="acc:1," entropy="0.000" lug_boot="big">acc</node>
+					</node>
+					<node classes="acc:3," entropy="0.000" doors="3">acc</node>
+					<node classes="acc:3," entropy="0.000" doors="4">acc</node>
+					<node classes="acc:3," entropy="0.000" doors="5more">acc</node>
+				</node>
+			</node>
+			<node classes="unacc:4,acc:26,good:4,vgood:14" entropy="0.798" buying="med">
+				<node classes="unacc:1,acc:11," entropy="0.207" maint="vhigh">
+					<node classes="unacc:1,acc:2," entropy="0.459" doors="2">
+						<node classes="unacc:1," entropy="0.000" lug_boot="small">unacc</node>
+						<node classes="acc:1," entropy="0.000" lug_boot="med">acc</node>
+						<node classes="acc:1," entropy="0.000" lug_boot="big">acc</node>
+					</node>
+					<node classes="acc:3," entropy="0.000" doors="3">acc</node>
+					<node classes="acc:3," entropy="0.000" doors="4">acc</node>
+					<node classes="acc:3," entropy="0.000" doors="5more">acc</node>
+				</node>
+				<node classes="unacc:1,acc:11," entropy="0.207" maint="high">
+					<node classes="unacc:1,acc:2," entropy="0.459" doors="2">
+						<node classes="unacc:1," entropy="0.000" lug_boot="small">unacc</node>
+						<node classes="acc:1," entropy="0.000" lug_boot="med">acc</node>
+						<node classes="acc:1," entropy="0.000" lug_boot="big">acc</node>
+					</node>
+					<node classes="acc:3," entropy="0.000" doors="3">acc</node>
+					<node classes="acc:3," entropy="0.000" doors="4">acc</node>
+					<node classes="acc:3," entropy="0.000" doors="5more">acc</node>
+				</node>
+				<node classes="unacc:1,acc:4,vgood:7" entropy="0.640" maint="med">
+					<node classes="unacc:1,acc:3," entropy="0.406" lug_boot="small">
+						<node classes="unacc:1," entropy="0.000" doors="2">unacc</node>
+						<node classes="acc:1," entropy="0.000" doors="3">acc</node>
+						<node classes="acc:1," entropy="0.000" doors="4">acc</node>
+						<node classes="acc:1," entropy="0.000" doors="5more">acc</node>
+					</node>
+					<node classes="acc:1,vgood:3" entropy="0.406" lug_boot="med">
+						<node classes="acc:1," entropy="0.000" doors="2">acc</node>
+						<node classes="vgood:1" entropy="0.000" doors="3">vgood</node>
+						<node classes="vgood:1" entropy="0.000" doors="4">vgood</node>
+						<node classes="vgood:1" entropy="0.000" doors="5more">vgood</node>
+					</node>
+					<node classes="vgood:4" entropy="0.000" lug_boot="big">vgood</node>
+				</node>
+				<node classes="unacc:1,good:4,vgood:7" entropy="0.640" maint="low">
+					<node classes="unacc:1,good:3," entropy="0.406" lug_boot="small">
+						<node classes="unacc:1," entropy="0.000" doors="2">unacc</node>
+						<node classes="good:1," entropy="0.000" doors="3">good</node>
+						<node classes="good:1," entropy="0.000" doors="4">good</node>
+						<node classes="good:1," entropy="0.000" doors="5more">good</node>
+					</node>
+					<node classes="good:1,vgood:3" entropy="0.406" lug_boot="med">
+						<node classes="good:1," entropy="0.000" doors="2">good</node>
+						<node classes="vgood:1" entropy="0.000" doors="3">vgood</node>
+						<node classes="vgood:1" entropy="0.000" doors="4">vgood</node>
+						<node classes="vgood:1" entropy="0.000" doors="5more">vgood</node>
+					</node>
+					<node classes="vgood:4" entropy="0.000" lug_boot="big">vgood</node>
+				</node>
+			</node>
+			<node classes="unacc:4,acc:15,good:8,vgood:21" entropy="0.888" buying="low">
+				<node classes="unacc:1,acc:11," entropy="0.207" maint="vhigh">
+					<node classes="unacc:1,acc:2," entropy="0.459" doors="2">
+						<node classes="unacc:1," entropy="0.000" lug_boot="small">unacc</node>
+						<node classes="acc:1," entropy="0.000" lug_boot="med">acc</node>
+						<node classes="acc:1," entropy="0.000" lug_boot="big">acc</node>
+					</node>
+					<node classes="acc:3," entropy="0.000" doors="3">acc</node>
+					<node classes="acc:3," entropy="0.000" doors="4">acc</node>
+					<node classes="acc:3," entropy="0.000" doors="5more">acc</node>
+				</node>
+				<node classes="unacc:1,acc:4,vgood:7" entropy="0.640" maint="high">
+					<node classes="unacc:1,acc:3," entropy="0.406" lug_boot="small">
+						<node classes="unacc:1," entropy="0.000" doors="2">unacc</node>
+						<node classes="acc:1," entropy="0.000" doors="3">acc</node>
+						<node classes="acc:1," entropy="0.000" doors="4">acc</node>
+						<node classes="acc:1," entropy="0.000" doors="5more">acc</node>
+					</node>
+					<node classes="acc:1,vgood:3" entropy="0.406" lug_boot="med">
+						<node classes="acc:1," entropy="0.000" doors="2">acc</node>
+						<node classes="vgood:1" entropy="0.000" doors="3">vgood</node>
+						<node classes="vgood:1" entropy="0.000" doors="4">vgood</node>
+						<node classes="vgood:1" entropy="0.000" doors="5more">vgood</node>
+					</node>
+					<node classes="vgood:4" entropy="0.000" lug_boot="big">vgood</node>
+				</node>
+				<node classes="unacc:1,good:4,vgood:7" entropy="0.640" maint="med">
+					<node classes="unacc:1,good:3," entropy="0.406" lug_boot="small">
+						<node classes="unacc:1," entropy="0.000" doors="2">unacc</node>
+						<node classes="good:1," entropy="0.000" doors="3">good</node>
+						<node classes="good:1," entropy="0.000" doors="4">good</node>
+						<node classes="good:1," entropy="0.000" doors="5more">good</node>
+					</node>
+					<node classes="good:1,vgood:3" entropy="0.406" lug_boot="med">
+						<node classes="good:1," entropy="0.000" doors="2">good</node>
+						<node classes="vgood:1" entropy="0.000" doors="3">vgood</node>
+						<node classes="vgood:1" entropy="0.000" doors="4">vgood</node>
+						<node classes="vgood:1" entropy="0.000" doors="5more">vgood</node>
+					</node>
+					<node classes="vgood:4" entropy="0.000" lug_boot="big">vgood</node>
+				</node>
+				<node classes="unacc:1,good:4,vgood:7" entropy="0.640" maint="low">
+					<node classes="unacc:1,good:3," entropy="0.406" lug_boot="small">
+						<node classes="unacc:1," entropy="0.000" doors="2">unacc</node>
+						<node classes="good:1," entropy="0.000" doors="3">good</node>
+						<node classes="good:1," entropy="0.000" doors="4">good</node>
+						<node classes="good:1," entropy="0.000" doors="5more">good</node>
+					</node>
+					<node classes="good:1,vgood:3" entropy="0.406" lug_boot="med">
+						<node classes="good:1," entropy="0.000" doors="2">good</node>
+						<node classes="vgood:1" entropy="0.000" doors="3">vgood</node>
+						<node classes="vgood:1" entropy="0.000" doors="4">vgood</node>
+						<node classes="vgood:1" entropy="0.000" doors="5more">vgood</node>
+					</node>
+					<node classes="vgood:4" entropy="0.000" lug_boot="big">vgood</node>
+				</node>
+			</node>
+		</node>
+	</node>
+</tree>
