@@ -10,3 +10,5 @@ An additional, dummy dataset was tested by us. It is available in the data folde
 The tooltip on the "select another data" button explains the characteristics of expected datasets. Any dataset is to be passed as a folder with one .data file and one .c45-names file.
 
 By default we randomly divide the data in the following way: 70% for training, and 30% for validation. This can be changed in the percentage variable of the ID3Learning class.
+
+The nodes can be moved for ease of viewing.
