@@ -3,7 +3,7 @@ A simple implementation of the ID3 algorithm for learning decision trees,. A JSw
 
 As documentation, the generated Javadocs and the annotations of the code itself are supplied. We also included in the doc folder a ClassDiagram that helps to visualize the implementation.
 
-Our code can be loaded into Eclipse, and should be easy to run and test, using (by default) the car dataset (http://archive.ics.uci.edu/ml/datasets/Car+Evaluation). There is a Main class with a main function, in the control package.
+Our code can be loaded into Eclipse, and should be easy to run and test, using (by default) the car dataset (http://archive.ics.uci.edu/ml/datasets/Car+Evaluation). There is a Main class with a main function, in the control package. First the user must click on draw to grow the tree with ID3, and after the tree is fully grown, the user can click on prune. After clicking prune, the current tree momentarily disappears from the screen, so the user should click on draw again to get the pruned tree to be shown.
 
 An additional, dummy dataset was tested by us. It is available in the data folder.
 
