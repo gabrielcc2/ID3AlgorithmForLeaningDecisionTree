@@ -1,63 +1,137 @@
+package ml.control;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.io.FileNotFoundException;
 import java.io.PrintWriter;
-/*
- * CLASS DecisionTree
- * 	In this class the definition of a DecisionTree is implemented. 
- *  The possibility of branching or growing the tree with ID3 is offered, and so is the chance for printing the tree as an XML file.
- *   
- *  ATTRIBUTES
- *  List<CategoricalType> attributeHeaderList: List of attributes.
- *  CategoricalType classHeader: Output variable or class
- *  List<int[]> data: Data in the node as a list of instances, each represented as an array of numbers representing attributes + the final one representing the class.
- *  List<DecisionTree> descendants: Array with the immediate descendants of this specific tree.
- *  int attributeUsed: Attribute that is selected in this node for further branching, -1 by default.
- *  int incomingAttributeIndex: Attribute that was selected in parent for branching, -1 by default.
- *  int incomingValueIndex=-1: Value of attribute used for generating this specific node, -1 by default.
- *  int outputVariable=-1: If it is a leaf, the outputVariable stores the learned outputValue
- *  int level=0: Level of the node in the general tree. Values from 0 (root) to n (outermost leaf).
- *  
- *  FUNCTIONS
- *  public boolean isLeaf(): Returns if the node is a Leaf (has no descendants)
- *  private int getNumInstancesInClass(int ): Returns the number of instances that on this node belong to a specific class or value of output variable.
- *  private double getEntropy(): Returns the entropy of the node
- *  private double informationGain(int ): Here we calculate the information gain of the attribute whose index (in the attributeHeaderList) is passed as input
- *  
- *  public int branchWithID3(CategoricalType, List<CategoricalType>, List<int[]>, int, int, int):
- *  	This function branches the tree using ID3. It returns 1 always. It takes as input from its parent (or caller):
- *            1. the classHeader, 
- *            2. the list of attributeHeaders (indicating which attributes have been used, in the corresponding flags)
- *            3. the data over which it will branch
- *            4. the index of the attribute his parent used for branching (-1 on first call)
- *            5. the index of the value (of the attribute) his parent used for branching (-1 on first call)
- *            6. the level (0 for the root)
- * 	public int printToXML(PrintWriter ): Prints the tree to XML, recursively. Receives as input the file opened for writing. 
- *  
- *  AUTHORS: 
- *  Gabriel Campero, gabrielcampero@acm.org
- *  Vishnu Unnikrishnan, vishnu.unnikrishnan@gmail.com
- *  */
-import java.io.UnsupportedEncodingException;
 
+import ml.model.CategoricalType;
+
+// TODO: Auto-generated Javadoc
+/** Decision Tree Class
+ *  <p>
+ *  Represents a node of a decision tree over categorical data.
+ *  <p>
+ *  It includes the data used to build it (as a list of type array of ints).
+ *  It also includes a list of CategoricalType for each attribute and output variable, which helps to map
+ *  from the data representation to the actual named categories.
+ *  <p>
+ *  It also includes a list of it's descendants, identifying variables and additional information.
+ *  
+ *  @author Gabriel
+ *  
+ * */
 public class DecisionTree {
+	
+	/** The attribute header list. */
 	private List<CategoricalType> attributeHeaderList= new ArrayList<CategoricalType>();  //List of attributes.
+	
+	/** The class header. */
 	private CategoricalType classHeader; //Output variable or class
+	
+	/** The data. */
 	private List<int[]> data; //Data in the node as a list of instances, each represented as an array of numbers representing attributes + the final one representing the class.
 	
+	/** The descendants. */
 	private List<DecisionTree> descendants = new ArrayList<DecisionTree>(); //Array with the immediate descendants of this specific tree.
-	private int attributeUsed=-1; //Attribute that is selected in this node for further branching.
-	private int incomingAttributeIndex=-1;//Attribute that was selected in parent for branching.
-	private int incomingValueIndex=-1; //Value of attribute used for generating this specific node.
-	private int outputVariable=-1;//If it is a leaf, the outputVariable stores the learned outputValue.
-	private int level=0;//Level of the node in the general tree. Values from 0 (root) to n (outermost leaf).
+
+	/*Identifying variables*/
+	/** The id. */
+	private int id=0;
 	
+	/** The parent id. */
+	private int parentId=0;
+	
+	/** The id count. */
+	private static int idCount=0; //To keep track of the number of nodes in the whole tree.
+
+	//Extra information
+	/** The attribute used. */
+	private int attributeUsed=-1; //Attribute that is selected in this node for further branching.
+	
+	/** The incoming attribute index. */
+	private int incomingAttributeIndex=-1;//Attribute that was selected in parent for branching.
+	
+	/** The incoming value index. */
+	private int incomingValueIndex=-1; //Value of attribute used for generating this specific node.
+	
+	/** The output variable. */
+	private int outputVariable=-1;//If it is a leaf, the outputVariable stores the learned outputValue.
+	
+	/** The level. */
+	private int level=0;//Level of the node in the general tree. Values from 0 (root) to n (outermost leaf).
+
+	/**
+	 * Function to determine if the node is a leaf.
+	 *
+	 * @return true, if is leaf
+	 */
 	public boolean isLeaf(){//Returns if the node is a Leaf (has no descendants)
 		return descendants.size()==0;
 	}
-	
-	private int getNumInstancesInClass(int classNum){ //Returns the number of instances that on this node belong to a specific class or value of output variable.
+
+	/**
+	 * Recursive function that returns a copy of the decision tree.
+	 *
+	 * @return copy of the tree
+	 */	
+	@SuppressWarnings("static-access")
+	public DecisionTree getCopy(){//Returns a copy of the decision tree
+		DecisionTree retTree = new DecisionTree();
+		for (int i=0; i<attributeHeaderList.size(); i++){
+			CategoricalType val=attributeHeaderList.get(i).getCopy();
+			retTree.attributeHeaderList.add(val);
+		}
+		retTree.classHeader= classHeader.getCopy();
+		retTree.data = new ArrayList <int[]>();
+		for (int j=0; j<data.size(); j++){
+			retTree.data.add(data.get(j));
+		}
+		retTree.attributeUsed=attributeUsed; 
+		retTree.incomingAttributeIndex=incomingAttributeIndex;
+		retTree.incomingValueIndex=incomingValueIndex;
+		retTree.outputVariable=outputVariable;
+		retTree.level=level;
+		retTree.id=id;
+		retTree.parentId=parentId;
+		retTree.idCount=idCount;
+		if (!isLeaf()){
+			for (int k=0; k<descendants.size(); k++){
+				DecisionTree aux=descendants.get(k).getCopy();
+				retTree.descendants.add(aux);
+			}
+		}
+		return retTree;
+	}
+
+	/**
+	 * Recursive function that deletes a non-leaf node, based on it's id.
+	 *
+	 * @param nodeId the node id
+	 */
+	public void deleteNode(int nodeId){
+		if (!this.isLeaf()){
+			if (this.id==nodeId){
+				descendants.clear();
+				outputVariable=this.getMostCommonClass();
+			}
+			else{
+				for (int i=0; i<descendants.size(); i++){
+					descendants.get(i).deleteNode(nodeId);
+				}
+			}
+		}
+	}
+
+	/**
+	 * Function that returns the number of instances in the data of this node,
+	 * which belong to a specific class, whose identifying number is passed
+	 * as a parameter.
+	 *
+	 * @param classNum the class num
+	 * @return the num instances in class
+	 */
+	private int getNumInstancesInClass(int classNum){ 
 		int count=0;
 		for (int i=0; i<data.size();i++){
 			if (data.get(i)[attributeHeaderList.size()]==classNum){
@@ -67,6 +141,35 @@ public class DecisionTree {
 		return count;
 	}
 	
+	/**
+	 * Function that returns the identifying number of the most common
+	 * class observed in the data of this node.
+	 *
+	 * @return the most common class
+	 */
+	private int getMostCommonClass(){ //Returns the most common class
+		int mostCommonClass=0;
+		int mostCommonValue=0;
+		for (int j=0; j<classHeader.getNumCategories(); j++){
+			int count=0;
+			for (int i=0; i<data.size();i++){
+				if (data.get(i)[attributeHeaderList.size()]==j){
+					count++;
+				}
+			}
+			if (count>mostCommonValue){
+				mostCommonClass=j;
+				mostCommonValue=count;
+			}
+		}
+		return mostCommonClass;
+	}
+
+	/**
+	 * Function that returns the entropy of the node.
+	 *
+	 * @return the entropy
+	 */
 	private double getEntropy(){//Returns the entropy of the node
 		double tempEntropy=0;
 		int casesByOutputValues[]=new int[classHeader.getNumCategories()];
@@ -83,6 +186,13 @@ public class DecisionTree {
 		return tempEntropy;
 	}
 	
+	/**
+	 * Function that returns the information gain from splitting on an attribute,
+	 * whose index is passed as a parameter.
+	 *
+	 * @param attributeIndex the attribute index
+	 * @return the double
+	 */
 	private double informationGain(int attributeIndex){//Here we calculate the information gain of the attribute whose index (in the attributeHeaderList) is passed as input
 		int totalAttributeValues=attributeHeaderList.get(attributeIndex).getNumCategories();
 		double gainOfAttribute=getEntropy(); //First term...
@@ -116,12 +226,68 @@ public class DecisionTree {
 		return gainOfAttribute;
 	}
 	
-	public int prune (){
-		
-		return 1;
+	/**
+	 * Recursive function that classifies according the decision tree the data from
+	 * a given tuple.
+	 * 
+	 * @param tuple of attributes to be classified according to the decision tree.
+	 * @return value from 0 to n, indicating the class assigned to the tuple by the tree.
+	 * 
+	 * */
+	public int classify(int[] tuple){
+		if (this.isLeaf()){
+			return outputVariable;
+		}
+		for (int i=0; i<descendants.size(); i++){
+			if (descendants.get(i).incomingValueIndex==tuple[attributeUsed]){
+				return descendants.get(i).classify(tuple);
+			}
+		}
+		return 0;//This is not ok, but it should never reach this...		
 	}
 	
-	public int branchWithID3(CategoricalType inheritedClassHeader, List<CategoricalType> inheritedAttributeHeaderList, List<int[]> inheritedData, int incomingAttribute, int incomingValue, int assignedLevel, List<Integer> usedAttr){
+	/**
+	 * Recursive function that returns the ids of non-leaf nodes in a given level.
+	 *
+	 * @param testLevel the test level
+	 * @return list with ids of all non-leaf nodes in a given level
+	 */
+	public List<Integer> getIdsOfNonLeafNodesInLevel(int testLevel){
+		List<Integer> resultList = new ArrayList<Integer>();
+		if (level==testLevel && !this.isLeaf()){
+			resultList.add(id);
+			return resultList;
+		}
+		else if (this.isLeaf()){
+			return resultList;
+		}
+		else {
+			List<Integer> partialList= new ArrayList<Integer>();
+			for (int i=0; i<descendants.size(); i++){
+				partialList=descendants.get(i).getIdsOfNonLeafNodesInLevel(testLevel);
+				if (!partialList.isEmpty()){
+					resultList.addAll(partialList);
+				}
+			}
+			return resultList;
+		}
+	}
+	
+	/**
+	 * Recursive function in charge of branching a given node, following the ID3 algorithm.
+	 *
+	 * @param inheritedClassHeader the inherited class header
+	 * @param inheritedAttributeHeaderList the inherited attribute header list
+	 * @param inheritedData the inherited data
+	 * @param incomingAttribute the incoming attribute
+	 * @param incomingValue the incoming value
+	 * @param assignedLevel the assigned level
+	 * @param usedAttr the used attr
+	 * @param assignedId the assigned id
+	 * @param assignedParentId the assigned parent id
+	 * @return 1
+	 */	
+	public int branchWithID3(CategoricalType inheritedClassHeader, List<CategoricalType> inheritedAttributeHeaderList, List<int[]> inheritedData, int incomingAttribute, int incomingValue, int assignedLevel, List<Integer> usedAttr, int assignedId, int assignedParentId){
 		classHeader=inheritedClassHeader.getCopy();
 		attributeHeaderList.clear();
 		attributeHeaderList.addAll(inheritedAttributeHeaderList);
@@ -129,6 +295,8 @@ public class DecisionTree {
 		incomingValueIndex=incomingValue;
 		incomingAttributeIndex=incomingAttribute;
 		level=assignedLevel;
+		parentId=assignedParentId;
+		id=assignedId;
 		descendants=new ArrayList<DecisionTree>();
 		
 		//First we check the two stopping conditions: if there are unused attributes or all perfectly classified
@@ -181,24 +349,8 @@ public class DecisionTree {
 						newData.add(data.get(j)); //Here we create the data that we will pass down (all instances where attribute used is of specific branching value)
 					}
 				}
-				
-				//PrintWriter writer;
-			//	try {
-				//	writer = new PrintWriter("output.xml", "UTF-8");
-					//this.printToXML(writer);
-					//writer.close();
-			//	} catch (FileNotFoundException | UnsupportedEncodingException e) {
-					// TODO Auto-generated catch block
-				//	e.printStackTrace();
-			//	}
-				//try {
-					//Thread.sleep(5000);
-				//} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
-					//e.printStackTrace();
-			//	}
 				descendants.add(son);//We add the descendant to the descendants list...
-				descendants.get(descendants.size()-1).branchWithID3(classHeader, newAttributeHeaderList, newData, attributeUsed, i, (level+1), usedAttr2); //Here we branch
+				descendants.get(descendants.size()-1).branchWithID3(classHeader, newAttributeHeaderList, newData, attributeUsed, i, (level+1), usedAttr2, idCount++, id); //Here we branch
 			}
 		}
 		else{//It is a leaf
@@ -220,8 +372,33 @@ public class DecisionTree {
 		return 1;
 	}
 	
+	/**
+	 * Recursive function that returns the maximum level (or depth)
+	 * of the tree.
+	 *
+	 * @return the maximum level
+	 */
+	public int getMaximumLevel(){
+		if (this.isLeaf())
+			return level;
+		int maxLevel=level; //Counting self
+		for (int i=0; i<this.descendants.size(); i++){
+			int descendantsLevel=descendants.get(i).getMaximumLevel();
+			if (maxLevel<descendantsLevel){
+				maxLevel=descendantsLevel;
+			}
+		}
+		return maxLevel;
+	}
+	
+	/**
+	 * Recursive function that prints the tree to an XML.
+	 *
+	 * @param writer the writer
+	 * @return the int
+	 */
 	public int printToXML(PrintWriter writer){//Prints the tree to XML, recursively. Receives as input the file opened for writing. 
-		if (this.isLeaf()){//&&incomingAttributeIndex!=-1 && outputVariable!=-1){//Is a leaf
+		if (this.isLeaf() && incomingAttributeIndex!=-1 ){//&& outputVariable!=-1){//Is a leaf
 			String auxString="";
 			for (int i=0; i<level; i++){
 				auxString+="	";
@@ -239,10 +416,19 @@ public class DecisionTree {
 						auxString+=",";
 				}
 			}
+			if (parentId!=0){
+				auxString+="\" id=\""+(int)(id+1)+"\" parentid=\""+(parentId+1);
+			}
+			else{
+				auxString+="\" id=\""+(int)(id+1)+"\" parentid=\""+(parentId);
+			}
+			auxString+="\" level=\""+level;
 			auxString+="\" entropy=\"";
 			auxString+=String.format("%.3f", getEntropy());
 			auxString+="\" ";
-			auxString+=attributeHeaderList.get(incomingAttributeIndex).getName()+"=\"";
+			auxString+="isLeaf=\"1\" ";
+			auxString+="attr=\"";
+			auxString+=attributeHeaderList.get(incomingAttributeIndex).getName()+"=";
 			auxString+=attributeHeaderList.get(incomingAttributeIndex).getCategory(incomingValueIndex)+"\">";
 			auxString+=classHeader.getCategory(outputVariable);
 			auxString+="</node>";
@@ -266,10 +452,19 @@ public class DecisionTree {
 							auxString+=",";
 					}
 				}
+				if (parentId!=0){
+					auxString+="\" id=\""+(int)(id+1)+"\" parentid=\""+(parentId+1);
+				}
+				else{
+					auxString+="\" id=\""+(int)(id+1)+"\" parentid=\""+(parentId);
+				}
+				auxString+="\" level=\""+level;
 				auxString+="\" entropy=\"";
 				auxString+=String.format("%.3f", getEntropy());
 				auxString+="\" ";
-				auxString+=attributeHeaderList.get(incomingAttributeIndex).getName()+"=\"";
+				auxString+="isLeaf=\"0\" ";
+				auxString+="attr=\"";
+				auxString+=attributeHeaderList.get(incomingAttributeIndex).getName()+"=";
 				auxString+=attributeHeaderList.get(incomingAttributeIndex).getCategory(incomingValueIndex)+"\">";
 				writer.println(auxString);
 		}
@@ -283,6 +478,8 @@ public class DecisionTree {
 					if (i<classHeader.getNumCategories()-1)
 						auxString+=",";
 				}
+				auxString+="\" id=\""+id+"\" parentid=\""+parentId;
+				auxString+="\" level=\""+level;
 				auxString+="\" entropy=\"";
 				auxString+=String.format("%.3f", getEntropy());
 				auxString+="\">";
