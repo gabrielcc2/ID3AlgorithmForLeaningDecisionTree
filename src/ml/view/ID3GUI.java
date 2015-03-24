@@ -1,4 +1,3 @@
-
 package ml.view;
 
 import java.awt.Dimension;
@@ -61,6 +60,10 @@ public class ID3GUI extends javax.swing.JFrame {
 	
 	/** The max tree level. */
 	private int maxTreeLevel=0;				//Housekeeping variable used to get max tree depth.
+	
+	private int maxPruningSteps=0;				//Housekeeping variable used to keep the maximum number of pruning steps.
+	
+	private int currentPruningSteps=0;				//Housekeeping variable used to track pruning steps.
 	
 	/*Variables for keeping track of state during GUI use*/
 	/** The redraw. */
@@ -582,15 +585,16 @@ public class ID3GUI extends javax.swing.JFrame {
      * @param evt the evt
      */
     private void useDefaultDataAction(java.awt.event.ActionEvent evt) {                                         
-    	if (!ID3Singleton.getInstance().usingDefaultDataFolder()){
-    		ID3Singleton.getInstance().useDefaultDataFolder();
-    		selectFilesDataUsedLabel.setText("Data used: Default");
-        	resultsDataUsedLabel.setText("Tree | Data used: Default | Pruned tree: No");
-        	pruned=false;
-        	redraw=true;
-			drawTreeButton.setEnabled(true);
-			pruneTreeButton.setEnabled(false);
-        }
+    	ID3Singleton.getInstance().useDefaultDataFolder();
+    	selectFilesDataUsedLabel.setText("Data used: Default");
+        resultsDataUsedLabel.setText("Tree | Data used: Default | Pruned tree: No");
+        pruned=false;
+        redraw=true;
+		drawTreeButton.setEnabled(true);
+		pruneTreeButton.setEnabled(false);
+		if (ourCanvas!=null){
+			ourCanvas.removeAll();
+		}
     }                                        
 
     /*Function that implements the changes when the button "Select another data" is pressed*/
@@ -618,6 +622,10 @@ public class ID3GUI extends javax.swing.JFrame {
                 	selectFilesDataUsedLabel.setText("Data used: Default");
                     resultsDataUsedLabel.setText("Tree | Data used: Default | Pruned tree: No");
                 }
+                
+        		if (ourCanvas!=null){
+        			ourCanvas.removeAll();
+        		}
                 
         	}
         };
@@ -683,14 +691,44 @@ public class ID3GUI extends javax.swing.JFrame {
      */
     private void pruneTree(java.awt.event.ActionEvent evt) {                                         
         // TODO add your handling code here:
-    	ID3Singleton.getInstance().pruneTree();
-    	drawTreeButton.setEnabled(true);
-    	redraw=true;
-		pruneTreeButton.setEnabled(false);
-		pruned=true;
-		if (ourCanvas!=null){
-			ourCanvas.removeAll();
-		}
+    	if (pruned==false){
+    		maxPruningSteps=ID3Singleton.getInstance().getMaxPruningSteps();
+    		currentPruningSteps=0;
+    	}
+    	if (currentPruningSteps<maxPruningSteps){
+    		currentPruningSteps++;
+        	ID3Singleton.getInstance().pruneTree(currentPruningSteps);
+    		redraw=true;
+    		pruned=true;
+    		if (ourCanvas!=null){
+    			ourCanvas.removeAll();
+    		}
+    		currentLevel=-1;
+    		while (currentLevel<=maxTreeLevel){
+    			drawTreeAction(evt);
+    		}
+    	    drawTreeButton.setEnabled(false);
+    	}
+    	if (currentPruningSteps>=maxPruningSteps){
+    		pruned=true;
+    		pruneTreeButton.setEnabled(false);
+			String textForLabel="Tree | Data used: ";
+			if (ID3Singleton.getInstance().usingDefaultDataFolder()){
+				textForLabel+="Default ";
+			}
+			else{
+				textForLabel+=ID3Singleton.getInstance().getDataFolder()+" ";
+			}
+			textForLabel+="| Pruned tree: ";
+			if (pruned){
+				textForLabel+="Yes ";
+			}
+			else{
+				textForLabel+="No ";
+			}
+			textForLabel+="| Acurracy over validation data: "+ID3Singleton.getInstance().getAccuracyOverValidationData();
+			resultsDataUsedLabel.setText(textForLabel);
+    	}
     }                                        
 
     /**

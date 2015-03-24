@@ -1,3 +1,327 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<tree classes="No:4,Yes:5" id="0" parentid="-1" level="0" entropy="0.991">
+<tree classes="unacc:848,acc:261,good:50,vgood:50" id="0" parentid="-1" level="0" entropy="0.608">
+	<node classes="unacc:403," id="1" parentid="0" level="1" entropy="0.000" isLeaf="1" attr="safety=low">unacc</node>
+	<node classes="unacc:245,acc:129,good:30," id="2" parentid="0" level="1" entropy="0.621" isLeaf="0" attr="safety=med">
+		<node classes="unacc:129," id="3" parentid="2" level="2" entropy="0.000" isLeaf="1" attr="persons=2">unacc</node>
+		<node classes="unacc:59,acc:66,good:14," id="4" parentid="2" level="2" entropy="0.684" isLeaf="0" attr="persons=4">
+			<node classes="unacc:28,acc:9," id="5" parentid="4" level="3" entropy="0.400" isLeaf="0" attr="buying=vhigh">
+				<node classes="unacc:9," id="6" parentid="5" level="4" entropy="0.000" isLeaf="1" attr="maint=vhigh">unacc</node>
+				<node classes="unacc:9," id="7" parentid="5" level="4" entropy="0.000" isLeaf="1" attr="maint=high">unacc</node>
+				<node classes="unacc:5,acc:5," id="8" parentid="5" level="4" entropy="0.500" isLeaf="0" attr="maint=med">
+					<node classes="unacc:3," id="9" parentid="8" level="5" entropy="0.000" isLeaf="1" attr="lug_boot=small">unacc</node>
+					<node classes="unacc:2,acc:2," id="10" parentid="8" level="5" entropy="0.500" isLeaf="0" attr="lug_boot=med">
+						<node classes="unacc:1," id="11" parentid="10" level="6" entropy="0.000" isLeaf="1" attr="doors=2">unacc</node>
+						<node classes="unacc:1," id="12" parentid="10" level="6" entropy="0.000" isLeaf="1" attr="doors=3">unacc</node>
+						<node classes="acc:1," id="13" parentid="10" level="6" entropy="0.000" isLeaf="1" attr="doors=4">acc</node>
+						<node classes="acc:1," id="14" parentid="10" level="6" entropy="0.000" isLeaf="1" attr="doors=5more">acc</node>
+					</node>
+					<node classes="acc:3," id="15" parentid="8" level="5" entropy="0.000" isLeaf="1" attr="lug_boot=big">acc</node>
+				</node>
+				<node classes="unacc:5,acc:4," id="16" parentid="5" level="4" entropy="0.496" isLeaf="0" attr="maint=low">
+					<node classes="unacc:3," id="17" parentid="16" level="5" entropy="0.000" isLeaf="1" attr="lug_boot=small">unacc</node>
+					<node classes="unacc:2,acc:1," id="18" parentid="16" level="5" entropy="0.459" isLeaf="0" attr="lug_boot=med">
+						<node classes="unacc:1," id="19" parentid="18" level="6" entropy="0.000" isLeaf="1" attr="doors=2">unacc</node>
+						<node classes="unacc:1," id="20" parentid="18" level="6" entropy="0.000" isLeaf="1" attr="doors=3">unacc</node>
+						<node classes="acc:1," id="21" parentid="18" level="6" entropy="0.000" isLeaf="1" attr="doors=4">acc</node>
+						<node classes="" id="22" parentid="18" level="6" entropy="0.000" isLeaf="1" attr="doors=5more">vgood</node>
+					</node>
+					<node classes="acc:3," id="23" parentid="16" level="5" entropy="0.000" isLeaf="1" attr="lug_boot=big">acc</node>
+				</node>
+			</node>
+			<node classes="unacc:18,acc:13," id="24" parentid="4" level="3" entropy="0.491" isLeaf="0" attr="buying=high">
+				<node classes="unacc:10," id="25" parentid="24" level="4" entropy="0.000" isLeaf="1" attr="lug_boot=small">unacc</node>
+				<node classes="unacc:6,acc:5," id="26" parentid="24" level="4" entropy="0.497" isLeaf="0" attr="lug_boot=med">
+					<node classes="unacc:3," id="27" parentid="26" level="5" entropy="0.000" isLeaf="1" attr="doors=2">unacc</node>
+					<node classes="unacc:2," id="28" parentid="26" level="5" entropy="0.000" isLeaf="1" attr="doors=3">unacc</node>
+					<node classes="acc:2," id="29" parentid="26" level="5" entropy="0.000" isLeaf="1" attr="doors=4">acc</node>
+					<node classes="unacc:1,acc:3," id="30" parentid="26" level="5" entropy="0.406" isLeaf="0" attr="doors=5more">
+						<node classes="unacc:1," id="31" parentid="30" level="6" entropy="0.000" isLeaf="1" attr="maint=vhigh">unacc</node>
+						<node classes="acc:1," id="32" parentid="30" level="6" entropy="0.000" isLeaf="1" attr="maint=high">acc</node>
+						<node classes="acc:1," id="33" parentid="30" level="6" entropy="0.000" isLeaf="1" attr="maint=med">acc</node>
+						<node classes="acc:1," id="34" parentid="30" level="6" entropy="0.000" isLeaf="1" attr="maint=low">acc</node>
+					</node>
+				</node>
+				<node classes="unacc:2,acc:8," id="35" parentid="24" level="4" entropy="0.361" isLeaf="0" attr="lug_boot=big">
+					<node classes="unacc:2," id="36" parentid="35" level="5" entropy="0.000" isLeaf="1" attr="maint=vhigh">unacc</node>
+					<node classes="acc:2," id="37" parentid="35" level="5" entropy="0.000" isLeaf="1" attr="maint=high">acc</node>
+					<node classes="acc:3," id="38" parentid="35" level="5" entropy="0.000" isLeaf="1" attr="maint=med">acc</node>
+					<node classes="acc:3," id="39" parentid="35" level="5" entropy="0.000" isLeaf="1" attr="maint=low">acc</node>
+				</node>
+			</node>
+			<node classes="unacc:9,acc:22,good:5," id="40" parentid="4" level="3" entropy="0.665" isLeaf="0" attr="buying=med">
+				<node classes="unacc:4,acc:6," id="41" parentid="40" level="4" entropy="0.485" isLeaf="0" attr="maint=vhigh">
+					<node classes="unacc:2," id="42" parentid="41" level="5" entropy="0.000" isLeaf="1" attr="lug_boot=small">unacc</node>
+					<node classes="unacc:2,acc:2," id="43" parentid="41" level="5" entropy="0.500" isLeaf="0" attr="lug_boot=med">
+						<node classes="unacc:1," id="44" parentid="43" level="6" entropy="0.000" isLeaf="1" attr="doors=2">unacc</node>
+						<node classes="unacc:1," id="45" parentid="43" level="6" entropy="0.000" isLeaf="1" attr="doors=3">unacc</node>
+						<node classes="acc:1," id="46" parentid="43" level="6" entropy="0.000" isLeaf="1" attr="doors=4">acc</node>
+						<node classes="acc:1," id="47" parentid="43" level="6" entropy="0.000" isLeaf="1" attr="doors=5more">acc</node>
+					</node>
+					<node classes="acc:4," id="48" parentid="41" level="5" entropy="0.000" isLeaf="1" attr="lug_boot=big">acc</node>
+				</node>
+				<node classes="unacc:5,acc:3," id="49" parentid="40" level="4" entropy="0.477" isLeaf="0" attr="maint=high">
+					<node classes="unacc:3," id="50" parentid="49" level="5" entropy="0.000" isLeaf="1" attr="lug_boot=small">unacc</node>
+					<node classes="unacc:2,acc:2," id="51" parentid="49" level="5" entropy="0.500" isLeaf="0" attr="lug_boot=med">
+						<node classes="unacc:1," id="52" parentid="51" level="6" entropy="0.000" isLeaf="1" attr="doors=2">unacc</node>
+						<node classes="unacc:1," id="53" parentid="51" level="6" entropy="0.000" isLeaf="1" attr="doors=3">unacc</node>
+						<node classes="acc:1," id="54" parentid="51" level="6" entropy="0.000" isLeaf="1" attr="doors=4">acc</node>
+						<node classes="acc:1," id="55" parentid="51" level="6" entropy="0.000" isLeaf="1" attr="doors=5more">acc</node>
+					</node>
+					<node classes="acc:1," id="56" parentid="49" level="5" entropy="0.000" isLeaf="1" attr="lug_boot=big">acc</node>
+				</node>
+				<node classes="acc:7," id="57" parentid="40" level="4" entropy="0.000" isLeaf="1" attr="maint=med">acc</node>
+				<node classes="acc:6,good:5," id="58" parentid="40" level="4" entropy="0.497" isLeaf="0" attr="maint=low">
+					<node classes="acc:4," id="59" parentid="58" level="5" entropy="0.000" isLeaf="1" attr="lug_boot=small">acc</node>
+					<node classes="acc:2,good:2," id="60" parentid="58" level="5" entropy="0.500" isLeaf="0" attr="lug_boot=med">
+						<node classes="acc:1," id="61" parentid="60" level="6" entropy="0.000" isLeaf="1" attr="doors=2">acc</node>
+						<node classes="acc:1," id="62" parentid="60" level="6" entropy="0.000" isLeaf="1" attr="doors=3">acc</node>
+						<node classes="good:1," id="63" parentid="60" level="6" entropy="0.000" isLeaf="1" attr="doors=4">good</node>
+						<node classes="good:1," id="64" parentid="60" level="6" entropy="0.000" isLeaf="1" attr="doors=5more">good</node>
+					</node>
+					<node classes="good:3," id="65" parentid="58" level="5" entropy="0.000" isLeaf="1" attr="lug_boot=big">good</node>
+				</node>
+			</node>
+			<node classes="unacc:4,acc:22,good:9," id="66" parentid="4" level="3" entropy="0.641" isLeaf="0" attr="buying=low">
+				<node classes="unacc:4,acc:4," id="67" parentid="66" level="4" entropy="0.500" isLeaf="0" attr="maint=vhigh">
+					<node classes="unacc:2," id="68" parentid="67" level="5" entropy="0.000" isLeaf="1" attr="lug_boot=small">unacc</node>
+					<node classes="unacc:2,acc:1," id="69" parentid="67" level="5" entropy="0.459" isLeaf="0" attr="lug_boot=med">
+						<node classes="unacc:1," id="70" parentid="69" level="6" entropy="0.000" isLeaf="1" attr="doors=2">unacc</node>
+						<node classes="unacc:1," id="71" parentid="69" level="6" entropy="0.000" isLeaf="1" attr="doors=3">unacc</node>
+						<node classes="" id="72" parentid="69" level="6" entropy="0.000" isLeaf="1" attr="doors=4">vgood</node>
+						<node classes="acc:1," id="73" parentid="69" level="6" entropy="0.000" isLeaf="1" attr="doors=5more">acc</node>
+					</node>
+					<node classes="acc:3," id="74" parentid="67" level="5" entropy="0.000" isLeaf="1" attr="lug_boot=big">acc</node>
+				</node>
+				<node classes="acc:10," id="75" parentid="66" level="4" entropy="0.000" isLeaf="1" attr="maint=high">acc</node>
+				<node classes="acc:2,good:4," id="76" parentid="66" level="4" entropy="0.459" isLeaf="0" attr="maint=med">
+					<node classes="acc:2," id="77" parentid="76" level="5" entropy="0.000" isLeaf="1" attr="lug_boot=small">acc</node>
+					<node classes="good:1," id="78" parentid="76" level="5" entropy="0.000" isLeaf="1" attr="lug_boot=med">good</node>
+					<node classes="good:3," id="79" parentid="76" level="5" entropy="0.000" isLeaf="1" attr="lug_boot=big">good</node>
+				</node>
+				<node classes="acc:6,good:5," id="80" parentid="66" level="4" entropy="0.497" isLeaf="0" attr="maint=low">
+					<node classes="acc:4," id="81" parentid="80" level="5" entropy="0.000" isLeaf="1" attr="lug_boot=small">acc</node>
+					<node classes="acc:2,good:2," id="82" parentid="80" level="5" entropy="0.500" isLeaf="0" attr="lug_boot=med">
+						<node classes="acc:1," id="83" parentid="82" level="6" entropy="0.000" isLeaf="1" attr="doors=2">acc</node>
+						<node classes="acc:1," id="84" parentid="82" level="6" entropy="0.000" isLeaf="1" attr="doors=3">acc</node>
+						<node classes="good:1," id="85" parentid="82" level="6" entropy="0.000" isLeaf="1" attr="doors=4">good</node>
+						<node classes="good:1," id="86" parentid="82" level="6" entropy="0.000" isLeaf="1" attr="doors=5more">good</node>
+					</node>
+					<node classes="good:3," id="87" parentid="80" level="5" entropy="0.000" isLeaf="1" attr="lug_boot=big">good</node>
+				</node>
+			</node>
+		</node>
+		<node classes="unacc:57,acc:63,good:16," id="88" parentid="2" level="2" entropy="0.702" isLeaf="0" attr="persons=more">
+			<node classes="unacc:26,acc:12," id="89" parentid="88" level="3" entropy="0.450" isLeaf="0" attr="buying=vhigh">
+				<node classes="unacc:7," id="90" parentid="89" level="4" entropy="0.000" isLeaf="1" attr="maint=vhigh">unacc</node>
+				<node classes="unacc:10," id="91" parentid="89" level="4" entropy="0.000" isLeaf="1" attr="maint=high">unacc</node>
+				<node classes="unacc:4,acc:7," id="92" parentid="89" level="4" entropy="0.473" isLeaf="0" attr="maint=med">
+					<node classes="unacc:3," id="93" parentid="92" level="5" entropy="0.000" isLeaf="1" attr="lug_boot=small">unacc</node>
+					<node classes="unacc:1,acc:3," id="94" parentid="92" level="5" entropy="0.406" isLeaf="0" attr="lug_boot=med">
+						<node classes="unacc:1," id="95" parentid="94" level="6" entropy="0.000" isLeaf="1" attr="doors=2">unacc</node>
+						<node classes="acc:1," id="96" parentid="94" level="6" entropy="0.000" isLeaf="1" attr="doors=3">acc</node>
+						<node classes="acc:1," id="97" parentid="94" level="6" entropy="0.000" isLeaf="1" attr="doors=4">acc</node>
+						<node classes="acc:1," id="98" parentid="94" level="6" entropy="0.000" isLeaf="1" attr="doors=5more">acc</node>
+					</node>
+					<node classes="acc:4," id="99" parentid="92" level="5" entropy="0.000" isLeaf="1" attr="lug_boot=big">acc</node>
+				</node>
+				<node classes="unacc:5,acc:5," id="100" parentid="89" level="4" entropy="0.500" isLeaf="0" attr="maint=low">
+					<node classes="unacc:4," id="101" parentid="100" level="5" entropy="0.000" isLeaf="1" attr="lug_boot=small">unacc</node>
+					<node classes="unacc:1,acc:1," id="102" parentid="100" level="5" entropy="0.500" isLeaf="0" attr="lug_boot=med">
+						<node classes="unacc:1," id="103" parentid="102" level="6" entropy="0.000" isLeaf="1" attr="doors=2">unacc</node>
+						<node classes="acc:1," id="104" parentid="102" level="6" entropy="0.000" isLeaf="1" attr="doors=3">acc</node>
+						<node classes="" id="105" parentid="102" level="6" entropy="0.000" isLeaf="1" attr="doors=4">vgood</node>
+						<node classes="" id="106" parentid="102" level="6" entropy="0.000" isLeaf="1" attr="doors=5more">vgood</node>
+					</node>
+					<node classes="acc:4," id="107" parentid="100" level="5" entropy="0.000" isLeaf="1" attr="lug_boot=big">acc</node>
+				</node>
+			</node>
+			<node classes="unacc:19,acc:12," id="108" parentid="88" level="3" entropy="0.481" isLeaf="0" attr="buying=high">
+				<node classes="unacc:12," id="109" parentid="108" level="4" entropy="0.000" isLeaf="1" attr="lug_boot=small">unacc</node>
+				<node classes="unacc:4,acc:6," id="110" parentid="108" level="4" entropy="0.485" isLeaf="0" attr="lug_boot=med">
+					<node classes="unacc:3," id="111" parentid="110" level="5" entropy="0.000" isLeaf="1" attr="doors=2">unacc</node>
+					<node classes="unacc:1,acc:2," id="112" parentid="110" level="5" entropy="0.459" isLeaf="1" attr="doors=3">acc</node>
+					<node classes="acc:2," id="117" parentid="110" level="5" entropy="0.000" isLeaf="1" attr="doors=4">acc</node>
+					<node classes="acc:2," id="118" parentid="110" level="5" entropy="0.000" isLeaf="1" attr="doors=5more">acc</node>
+				</node>
+				<node classes="unacc:3,acc:6," id="119" parentid="108" level="4" entropy="0.459" isLeaf="0" attr="lug_boot=big">
+					<node classes="unacc:3," id="120" parentid="119" level="5" entropy="0.000" isLeaf="1" attr="maint=vhigh">unacc</node>
+					<node classes="acc:1," id="121" parentid="119" level="5" entropy="0.000" isLeaf="1" attr="maint=high">acc</node>
+					<node classes="acc:3," id="122" parentid="119" level="5" entropy="0.000" isLeaf="1" attr="maint=med">acc</node>
+					<node classes="acc:2," id="123" parentid="119" level="5" entropy="0.000" isLeaf="1" attr="maint=low">acc</node>
+				</node>
+			</node>
+			<node classes="unacc:9,acc:20,good:5," id="124" parentid="88" level="3" entropy="0.682" isLeaf="0" attr="buying=med">
+				<node classes="unacc:4,acc:5," id="125" parentid="124" level="4" entropy="0.496" isLeaf="0" attr="maint=vhigh">
+					<node classes="unacc:4," id="126" parentid="125" level="5" entropy="0.000" isLeaf="1" attr="lug_boot=small">unacc</node>
+					<node classes="acc:2," id="127" parentid="125" level="5" entropy="0.000" isLeaf="1" attr="lug_boot=med">acc</node>
+					<node classes="acc:3," id="128" parentid="125" level="5" entropy="0.000" isLeaf="1" attr="lug_boot=big">acc</node>
+				</node>
+				<node classes="unacc:5,acc:3," id="129" parentid="124" level="4" entropy="0.477" isLeaf="0" attr="maint=high">
+					<node classes="unacc:4," id="130" parentid="129" level="5" entropy="0.000" isLeaf="1" attr="lug_boot=small">unacc</node>
+					<node classes="unacc:1,acc:2," id="131" parentid="129" level="5" entropy="0.459" isLeaf="1" attr="lug_boot=med">acc</node>
+					<node classes="acc:1," id="136" parentid="129" level="5" entropy="0.000" isLeaf="1" attr="lug_boot=big">acc</node>
+				</node>
+				<node classes="acc:9," id="137" parentid="124" level="4" entropy="0.000" isLeaf="1" attr="maint=med">acc</node>
+				<node classes="acc:3,good:5," id="138" parentid="124" level="4" entropy="0.477" isLeaf="0" attr="maint=low">
+					<node classes="acc:2," id="139" parentid="138" level="5" entropy="0.000" isLeaf="1" attr="lug_boot=small">acc</node>
+					<node classes="acc:1,good:2," id="140" parentid="138" level="5" entropy="0.459" isLeaf="1" attr="lug_boot=med">good</node>
+					<node classes="good:3," id="145" parentid="138" level="5" entropy="0.000" isLeaf="1" attr="lug_boot=big">good</node>
+				</node>
+			</node>
+			<node classes="unacc:3,acc:19,good:11," id="146" parentid="88" level="3" entropy="0.651" isLeaf="0" attr="buying=low">
+				<node classes="unacc:3,acc:4," id="147" parentid="146" level="4" entropy="0.493" isLeaf="0" attr="maint=vhigh">
+					<node classes="unacc:2," id="148" parentid="147" level="5" entropy="0.000" isLeaf="1" attr="lug_boot=small">unacc</node>
+					<node classes="unacc:1,acc:2," id="149" parentid="147" level="5" entropy="0.459" isLeaf="1" attr="lug_boot=med">acc</node>
+					<node classes="acc:2," id="154" parentid="147" level="5" entropy="0.000" isLeaf="1" attr="lug_boot=big">acc</node>
+				</node>
+				<node classes="acc:9," id="155" parentid="146" level="4" entropy="0.000" isLeaf="1" attr="maint=high">acc</node>
+				<node classes="acc:4,good:5," id="156" parentid="146" level="4" entropy="0.496" isLeaf="1" attr="maint=med">good</node>
+				<node classes="acc:2,good:6," id="164" parentid="146" level="4" entropy="0.406" isLeaf="0" attr="maint=low">
+					<node classes="acc:1," id="165" parentid="164" level="5" entropy="0.000" isLeaf="1" attr="lug_boot=small">acc</node>
+					<node classes="acc:1,good:2," id="166" parentid="164" level="5" entropy="0.459" isLeaf="1" attr="lug_boot=med">good</node>
+					<node classes="good:4," id="171" parentid="164" level="5" entropy="0.000" isLeaf="1" attr="lug_boot=big">good</node>
+				</node>
+			</node>
+		</node>
+	</node>
+	<node classes="unacc:200,acc:132,good:20,vgood:50" id="172" parentid="0" level="1" entropy="0.809" isLeaf="0" attr="safety=high">
+		<node classes="unacc:139," id="173" parentid="172" level="2" entropy="0.000" isLeaf="1" attr="persons=2">unacc</node>
+		<node classes="unacc:27,acc:73,good:11,vgood:25" id="174" parentid="172" level="2" entropy="0.844" isLeaf="0" attr="persons=4">
+			<node classes="unacc:20,acc:16," id="175" parentid="174" level="3" entropy="0.496" isLeaf="0" attr="buying=vhigh">
+				<node classes="unacc:10," id="176" parentid="175" level="4" entropy="0.000" isLeaf="1" attr="maint=vhigh">unacc</node>
+				<node classes="unacc:10," id="177" parentid="175" level="4" entropy="0.000" isLeaf="1" attr="maint=high">unacc</node>
+				<node classes="acc:7," id="178" parentid="175" level="4" entropy="0.000" isLeaf="1" attr="maint=med">acc</node>
+				<node classes="acc:9," id="179" parentid="175" level="4" entropy="0.000" isLeaf="1" attr="maint=low">acc</node>
+			</node>
+			<node classes="unacc:7,acc:24," id="180" parentid="174" level="3" entropy="0.385" isLeaf="0" attr="buying=high">
+				<node classes="unacc:7," id="181" parentid="180" level="4" entropy="0.000" isLeaf="1" attr="maint=vhigh">unacc</node>
+				<node classes="acc:8," id="182" parentid="180" level="4" entropy="0.000" isLeaf="1" attr="maint=high">acc</node>
+				<node classes="acc:9," id="183" parentid="180" level="4" entropy="0.000" isLeaf="1" attr="maint=med">acc</node>
+				<node classes="acc:7," id="184" parentid="180" level="4" entropy="0.000" isLeaf="1" attr="maint=low">acc</node>
+			</node>
+			<node classes="acc:23,good:4,vgood:9" id="185" parentid="174" level="3" entropy="0.633" isLeaf="0" attr="buying=med">
+				<node classes="acc:10," id="186" parentid="185" level="4" entropy="0.000" isLeaf="1" attr="maint=vhigh">acc</node>
+				<node classes="acc:10," id="187" parentid="185" level="4" entropy="0.000" isLeaf="1" attr="maint=high">acc</node>
+				<node classes="acc:3,vgood:5" id="188" parentid="185" level="4" entropy="0.477" isLeaf="0" attr="maint=med">
+					<node classes="acc:2," id="189" parentid="188" level="5" entropy="0.000" isLeaf="1" attr="lug_boot=small">acc</node>
+					<node classes="acc:1,vgood:1" id="190" parentid="188" level="5" entropy="0.500" isLeaf="0" attr="lug_boot=med">
+						<node classes="acc:1," id="191" parentid="190" level="6" entropy="0.000" isLeaf="1" attr="doors=2">acc</node>
+						<node classes="" id="192" parentid="190" level="6" entropy="0.000" isLeaf="1" attr="doors=3">vgood</node>
+						<node classes="" id="193" parentid="190" level="6" entropy="0.000" isLeaf="1" attr="doors=4">vgood</node>
+						<node classes="vgood:1" id="194" parentid="190" level="6" entropy="0.000" isLeaf="1" attr="doors=5more">vgood</node>
+					</node>
+					<node classes="vgood:4" id="195" parentid="188" level="5" entropy="0.000" isLeaf="1" attr="lug_boot=big">vgood</node>
+				</node>
+				<node classes="good:4,vgood:4" id="196" parentid="185" level="4" entropy="0.500" isLeaf="0" attr="maint=low">
+					<node classes="good:2," id="197" parentid="196" level="5" entropy="0.000" isLeaf="1" attr="lug_boot=small">good</node>
+					<node classes="good:2,vgood:2" id="198" parentid="196" level="5" entropy="0.500" isLeaf="0" attr="lug_boot=med">
+						<node classes="good:1," id="199" parentid="198" level="6" entropy="0.000" isLeaf="1" attr="doors=2">good</node>
+						<node classes="good:1," id="200" parentid="198" level="6" entropy="0.000" isLeaf="1" attr="doors=3">good</node>
+						<node classes="vgood:1" id="201" parentid="198" level="6" entropy="0.000" isLeaf="1" attr="doors=4">vgood</node>
+						<node classes="vgood:1" id="202" parentid="198" level="6" entropy="0.000" isLeaf="1" attr="doors=5more">vgood</node>
+					</node>
+					<node classes="vgood:2" id="203" parentid="196" level="5" entropy="0.000" isLeaf="1" attr="lug_boot=big">vgood</node>
+				</node>
+			</node>
+			<node classes="acc:10,good:7,vgood:16" id="204" parentid="174" level="3" entropy="0.751" isLeaf="0" attr="buying=low">
+				<node classes="acc:6," id="205" parentid="204" level="4" entropy="0.000" isLeaf="1" attr="maint=vhigh">acc</node>
+				<node classes="acc:4,vgood:5" id="206" parentid="204" level="4" entropy="0.496" isLeaf="0" attr="maint=high">
+					<node classes="acc:2," id="207" parentid="206" level="5" entropy="0.000" isLeaf="1" attr="lug_boot=small">acc</node>
+					<node classes="acc:2,vgood:1" id="208" parentid="206" level="5" entropy="0.459" isLeaf="0" attr="lug_boot=med">
+						<node classes="acc:1," id="209" parentid="208" level="6" entropy="0.000" isLeaf="1" attr="doors=2">acc</node>
+						<node classes="acc:1," id="210" parentid="208" level="6" entropy="0.000" isLeaf="1" attr="doors=3">acc</node>
+						<node classes="vgood:1" id="211" parentid="208" level="6" entropy="0.000" isLeaf="1" attr="doors=4">vgood</node>
+						<node classes="" id="212" parentid="208" level="6" entropy="0.000" isLeaf="1" attr="doors=5more">vgood</node>
+					</node>
+					<node classes="vgood:4" id="213" parentid="206" level="5" entropy="0.000" isLeaf="1" attr="lug_boot=big">vgood</node>
+				</node>
+				<node classes="good:4,vgood:5" id="214" parentid="204" level="4" entropy="0.496" isLeaf="0" attr="maint=med">
+					<node classes="good:3," id="215" parentid="214" level="5" entropy="0.000" isLeaf="1" attr="lug_boot=small">good</node>
+					<node classes="good:1,vgood:1" id="216" parentid="214" level="5" entropy="0.500" isLeaf="0" attr="lug_boot=med">
+						<node classes="" id="217" parentid="216" level="6" entropy="0.000" isLeaf="1" attr="doors=2">vgood</node>
+						<node classes="good:1," id="218" parentid="216" level="6" entropy="0.000" isLeaf="1" attr="doors=3">good</node>
+						<node classes="vgood:1" id="219" parentid="216" level="6" entropy="0.000" isLeaf="1" attr="doors=4">vgood</node>
+						<node classes="" id="220" parentid="216" level="6" entropy="0.000" isLeaf="1" attr="doors=5more">vgood</node>
+					</node>
+					<node classes="vgood:4" id="221" parentid="214" level="5" entropy="0.000" isLeaf="1" attr="lug_boot=big">vgood</node>
+				</node>
+				<node classes="good:3,vgood:6" id="222" parentid="204" level="4" entropy="0.459" isLeaf="0" attr="maint=low">
+					<node classes="good:2," id="223" parentid="222" level="5" entropy="0.000" isLeaf="1" attr="lug_boot=small">good</node>
+					<node classes="good:1,vgood:2" id="224" parentid="222" level="5" entropy="0.459" isLeaf="0" attr="lug_boot=med">
+						<node classes="good:1," id="225" parentid="224" level="6" entropy="0.000" isLeaf="1" attr="doors=2">good</node>
+						<node classes="" id="226" parentid="224" level="6" entropy="0.000" isLeaf="1" attr="doors=3">vgood</node>
+						<node classes="vgood:1" id="227" parentid="224" level="6" entropy="0.000" isLeaf="1" attr="doors=4">vgood</node>
+						<node classes="vgood:1" id="228" parentid="224" level="6" entropy="0.000" isLeaf="1" attr="doors=5more">vgood</node>
+					</node>
+					<node classes="vgood:4" id="229" parentid="222" level="5" entropy="0.000" isLeaf="1" attr="lug_boot=big">vgood</node>
+				</node>
+			</node>
+		</node>
+		<node classes="unacc:34,acc:59,good:9,vgood:25" id="230" parentid="172" level="2" entropy="0.878" isLeaf="0" attr="persons=more">
+			<node classes="unacc:17,acc:17," id="231" parentid="230" level="3" entropy="0.500" isLeaf="0" attr="buying=vhigh">
+				<node classes="unacc:9," id="232" parentid="231" level="4" entropy="0.000" isLeaf="1" attr="maint=vhigh">unacc</node>
+				<node classes="unacc:7," id="233" parentid="231" level="4" entropy="0.000" isLeaf="1" attr="maint=high">unacc</node>
+				<node classes="unacc:1,acc:8," id="234" parentid="231" level="4" entropy="0.252" isLeaf="1" attr="maint=med">acc</node>
+				<node classes="acc:9," id="239" parentid="231" level="4" entropy="0.000" isLeaf="1" attr="maint=low">acc</node>
+			</node>
+			<node classes="unacc:11,acc:18," id="240" parentid="230" level="3" entropy="0.479" isLeaf="1" attr="buying=high">acc</node>
+			<node classes="unacc:3,acc:16,good:4,vgood:8" id="266" parentid="230" level="3" entropy="0.852" isLeaf="0" attr="buying=med">
+				<node classes="unacc:1,acc:7," id="267" parentid="266" level="4" entropy="0.272" isLeaf="1" attr="maint=vhigh">acc</node>
+				<node classes="unacc:1,acc:6," id="272" parentid="266" level="4" entropy="0.296" isLeaf="1" attr="maint=high">acc</node>
+				<node classes="unacc:1,acc:3,vgood:6" id="280" parentid="266" level="4" entropy="0.648" isLeaf="0" attr="maint=med">
+					<node classes="unacc:1,acc:2," id="281" parentid="280" level="5" entropy="0.459" isLeaf="1" attr="lug_boot=small">acc</node>
+					<node classes="acc:1,vgood:2" id="286" parentid="280" level="5" entropy="0.459" isLeaf="0" attr="lug_boot=med">
+						<node classes="acc:1," id="287" parentid="286" level="6" entropy="0.000" isLeaf="1" attr="doors=2">acc</node>
+						<node classes="vgood:1" id="288" parentid="286" level="6" entropy="0.000" isLeaf="1" attr="doors=3">vgood</node>
+						<node classes="" id="289" parentid="286" level="6" entropy="0.000" isLeaf="1" attr="doors=4">vgood</node>
+						<node classes="vgood:1" id="290" parentid="286" level="6" entropy="0.000" isLeaf="1" attr="doors=5more">vgood</node>
+					</node>
+					<node classes="vgood:4" id="291" parentid="280" level="5" entropy="0.000" isLeaf="1" attr="lug_boot=big">vgood</node>
+				</node>
+				<node classes="good:4,vgood:2" id="292" parentid="266" level="4" entropy="0.459" isLeaf="0" attr="maint=low">
+					<node classes="good:3," id="293" parentid="292" level="5" entropy="0.000" isLeaf="1" attr="lug_boot=small">good</node>
+					<node classes="good:1,vgood:1" id="294" parentid="292" level="5" entropy="0.500" isLeaf="0" attr="lug_boot=med">
+						<node classes="good:1," id="295" parentid="294" level="6" entropy="0.000" isLeaf="1" attr="doors=2">good</node>
+						<node classes="" id="296" parentid="294" level="6" entropy="0.000" isLeaf="1" attr="doors=3">vgood</node>
+						<node classes="vgood:1" id="297" parentid="294" level="6" entropy="0.000" isLeaf="1" attr="doors=4">vgood</node>
+						<node classes="" id="298" parentid="294" level="6" entropy="0.000" isLeaf="1" attr="doors=5more">vgood</node>
+					</node>
+					<node classes="vgood:1" id="299" parentid="292" level="5" entropy="0.000" isLeaf="1" attr="lug_boot=big">vgood</node>
+				</node>
+			</node>
+			<node classes="unacc:3,acc:8,good:5,vgood:17" id="300" parentid="230" level="3" entropy="0.858" isLeaf="0" attr="buying=low">
+				<node classes="unacc:1,acc:5," id="301" parentid="300" level="4" entropy="0.325" isLeaf="1" attr="maint=vhigh">acc</node>
+				<node classes="unacc:1,acc:3,vgood:4" id="305" parentid="300" level="4" entropy="0.703" isLeaf="0" attr="maint=high">
+					<node classes="unacc:1,acc:2," id="306" parentid="305" level="5" entropy="0.459" isLeaf="1" attr="lug_boot=small">acc</node>
+					<node classes="acc:1,vgood:1" id="311" parentid="305" level="5" entropy="0.500" isLeaf="0" attr="lug_boot=med">
+						<node classes="acc:1," id="312" parentid="311" level="6" entropy="0.000" isLeaf="1" attr="doors=2">acc</node>
+						<node classes="" id="313" parentid="311" level="6" entropy="0.000" isLeaf="1" attr="doors=3">vgood</node>
+						<node classes="vgood:1" id="314" parentid="311" level="6" entropy="0.000" isLeaf="1" attr="doors=4">vgood</node>
+						<node classes="" id="315" parentid="311" level="6" entropy="0.000" isLeaf="1" attr="doors=5more">vgood</node>
+					</node>
+					<node classes="vgood:3" id="316" parentid="305" level="5" entropy="0.000" isLeaf="1" attr="lug_boot=big">vgood</node>
+				</node>
+				<node classes="unacc:1,good:2,vgood:6" id="317" parentid="300" level="4" entropy="0.612" isLeaf="0" attr="maint=med">
+					<node classes="unacc:1,good:1," id="318" parentid="317" level="5" entropy="0.500" isLeaf="0" attr="lug_boot=small">
+						<node classes="unacc:1," id="319" parentid="318" level="6" entropy="0.000" isLeaf="1" attr="doors=2">unacc</node>
+						<node classes="" id="320" parentid="318" level="6" entropy="0.000" isLeaf="1" attr="doors=3">vgood</node>
+						<node classes="" id="321" parentid="318" level="6" entropy="0.000" isLeaf="1" attr="doors=4">vgood</node>
+						<node classes="good:1," id="322" parentid="318" level="6" entropy="0.000" isLeaf="1" attr="doors=5more">good</node>
+					</node>
+					<node classes="good:1,vgood:3" id="323" parentid="317" level="5" entropy="0.406" isLeaf="0" attr="lug_boot=med">
+						<node classes="good:1," id="324" parentid="323" level="6" entropy="0.000" isLeaf="1" attr="doors=2">good</node>
+						<node classes="vgood:1" id="325" parentid="323" level="6" entropy="0.000" isLeaf="1" attr="doors=3">vgood</node>
+						<node classes="vgood:1" id="326" parentid="323" level="6" entropy="0.000" isLeaf="1" attr="doors=4">vgood</node>
+						<node classes="vgood:1" id="327" parentid="323" level="6" entropy="0.000" isLeaf="1" attr="doors=5more">vgood</node>
+					</node>
+					<node classes="vgood:3" id="328" parentid="317" level="5" entropy="0.000" isLeaf="1" attr="lug_boot=big">vgood</node>
+				</node>
+				<node classes="good:3,vgood:7" id="329" parentid="300" level="4" entropy="0.441" isLeaf="0" attr="maint=low">
+					<node classes="good:3," id="330" parentid="329" level="5" entropy="0.000" isLeaf="1" attr="lug_boot=small">good</node>
+					<node classes="vgood:3" id="331" parentid="329" level="5" entropy="0.000" isLeaf="1" attr="lug_boot=med">vgood</node>
+					<node classes="vgood:4" id="332" parentid="329" level="5" entropy="0.000" isLeaf="1" attr="lug_boot=big">vgood</node>
+				</node>
+			</node>
+		</node>
+	</node>
 </tree>

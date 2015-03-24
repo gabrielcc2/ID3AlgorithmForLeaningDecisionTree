@@ -147,6 +147,20 @@ public class ID3Singleton {
 		app.treeToXML(OUTPUT_FILE);
 	}
 	
+	/**Function that commands the pruning of the tree up until a step.
+	 * 
+	 * */
+	public void pruneTree(int step){
+		app.reducedErrorPruneTree(step);
+		app.treeToXML(OUTPUT_FILE);
+	}
+
+	/*Function to get the maximum number of pruning steps*/
+	public int getMaxPruningSteps(){
+		app.initializeCopyTree();
+		return app.maxStepsInReducedErrorPruneTree();
+	}
+	
 	/**
 	 * Function that returns the accuracy of the tree over
 	 * the validation data.

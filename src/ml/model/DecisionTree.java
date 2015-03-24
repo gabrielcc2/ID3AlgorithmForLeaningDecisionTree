@@ -1,11 +1,9 @@
-package ml.control;
+package ml.model;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.io.PrintWriter;
-
-import ml.model.CategoricalType;
 
 // TODO: Auto-generated Javadoc
 /** Decision Tree Class
@@ -17,6 +15,9 @@ import ml.model.CategoricalType;
  *  from the data representation to the actual named categories.
  *  <p>
  *  It also includes a list of it's descendants, identifying variables and additional information.
+ *  <p>
+ *  This class includes all recursive functions needed for working with the tree, such as pruning and 
+ *  branching with ID3.
  *  
  *  @author Gabriel
  *  
@@ -43,7 +44,7 @@ public class DecisionTree {
 	private int parentId=0;
 	
 	/** The id count. */
-	private static int idCount=0; //To keep track of the number of nodes in the whole tree.
+	private static int idCount=1; //To keep track of the number of nodes in the whole tree.
 
 	//Extra information
 	/** The attribute used. */
@@ -416,12 +417,7 @@ public class DecisionTree {
 						auxString+=",";
 				}
 			}
-			if (parentId!=0){
-				auxString+="\" id=\""+(int)(id+1)+"\" parentid=\""+(parentId+1);
-			}
-			else{
-				auxString+="\" id=\""+(int)(id+1)+"\" parentid=\""+(parentId);
-			}
+			auxString+="\" id=\""+(int)(id)+"\" parentid=\""+(parentId);
 			auxString+="\" level=\""+level;
 			auxString+="\" entropy=\"";
 			auxString+=String.format("%.3f", getEntropy());
@@ -452,12 +448,7 @@ public class DecisionTree {
 							auxString+=",";
 					}
 				}
-				if (parentId!=0){
-					auxString+="\" id=\""+(int)(id+1)+"\" parentid=\""+(parentId+1);
-				}
-				else{
-					auxString+="\" id=\""+(int)(id+1)+"\" parentid=\""+(parentId);
-				}
+				auxString+="\" id=\""+(int)(id)+"\" parentid=\""+(parentId); 
 				auxString+="\" level=\""+level;
 				auxString+="\" entropy=\"";
 				auxString+=String.format("%.3f", getEntropy());
